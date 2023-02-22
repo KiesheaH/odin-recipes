@@ -5,10 +5,24 @@ html {
     font-size: 30px;
 }
 
+/* 
+1. Start greetings at the top of the screen with a visibility of none and hidden (margin-top: 0vh)
+2. Make heading visibility in animation that ends when margin-top is 7.75rem.
+3. Figure out timing for visibility change and speed
+*/
 
+body {
+    position: relative;
+}
+
+/* HEADING STYLES */
 .greetings h1 {
-    margin-top: 25vh;
-    font-size: 2.25rem;
+    margin-top: 7.75rem; 
+    font-size: 2.5rem;
+    display: inline-block;
+    color: white;
+    animation: 3s slideDown linear;
+
 }
 
 .greetings,
@@ -16,17 +30,72 @@ html {
     display: inline-block;
     text-align: center;
     width: 100%;
-}
-.greetings {
     font-family: 'Dancing Script';
-    font-size: 2.25rem;
-    color: white;
+}
+
+
+@keyframes slideDown {
+    0% {
+        margin-top: 0;
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 7.75rem;
+        opacity: 1;
+        display: inline-block;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-15rem);
+        display: none;
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateX(-7.5rem);
+        display: inline-block;
+        opacity: .5;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: .75;
+    }
+
+    75% {
+        transform: translateX(2.5rem);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+/* 
+1. Start all links with visibility zero and hidden
+2. The first and third links will be positioned to the right and will fade from that direction
+3. The second and last links will be positioned to the left and will fade from that direction
+4. Links will go a little beyond final position (as shown before animation)
+5. Once all links are on the screen make the outlines of the h1 and links glow orange / change color to orange (whichever looks best)
+*/
+
+/* RECIPE LIST STYLES */
+.recipes {
+    position: absolute;
+    top: 14.75rem;
+    right: 0;
+    animation: 3s slideInRight linear 4s;
 }
 
 .recipes a {
-    font-family: 'Dancing Script';
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 .recipes a:hover {
@@ -35,8 +104,4 @@ html {
 
 .recipes div:not(:last-child) {
     margin-bottom: .575rem;
-}
-
-.recipes {
-    margin-top: .75rem;
 }
