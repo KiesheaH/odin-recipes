@@ -1,7 +1,7 @@
 html {
     background-color: #414345;
     font-family: 'Roboto Condensed';
-    display: block;
+    display: inline-block;
     font-size: 30px;
 }
 
