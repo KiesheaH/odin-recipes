@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Brush Script MT";
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 150px;
+  color: #fff;
+  background-color: #1b81e0;
+  padding: 5px;
+  height: 20vh;
+  text-align: center;
+}
+
+.recipes {
+  height: 80vh;
+}
+
+.container {
+  width: 500px;
+  overflow: hidden;
+  padding: 30px;
+  margin-top: 145px;
+  margin-left: 175px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Tahoma", sans-serif;
+  color: #353535;
+}
