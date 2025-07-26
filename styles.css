@@ -1,12 +1,27 @@
+/***********************
+UNIVERSAL OPERATOR
+**********************/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/***********************
+HOMEPAGE
+**********************/
 body {
   height: 100vh;
   background-color: #fdf2b5;
+  font-family: "Arial", sans-serif;
+}
+
+.logo,
+h2,
+h3,
+.arrows,
+.home {
+  color: #af3d08;
 }
 
 .logo {
@@ -14,22 +29,15 @@ body {
   text-transform: lowercase;
   font-weight: 400;
   font-size: 45px;
-  color: #af3d08;
   padding: 5px;
   height: 10vh;
   display: inline;
 }
 
-.featured {
+h2 {
   font-size: 55px;
   margin-top: 80px;
   text-align: center;
-}
-
-.recipes {
-  font-family: "Arial", sans-serif;
-  height: 90vh;
-  color: #1d1d1d;
 }
 
 .container {
@@ -51,14 +59,85 @@ img {
   width: 100%;
 }
 
-li {
-  list-style-type: none;
+.recipes {
+  height: 90vh;
+  color: #1d1d1d;
+}
+
+.recipes ul li {
   display: inline-block;
   text-align: center;
 }
 
 a {
-  text-decoration: none;
   font-size: 35px;
-  color: #1d1d1d;
+  color: #af3d08;
+  text-decoration: none;
+}
+
+/***********************
+MEALS
+**********************/
+.comfort {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-left: 150px;
+}
+
+.meal {
+  width: 500px;
+  margin-left: 150px;
+}
+
+.recipe {
+  padding: 0 150px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+p,
+.ingredients li,
+.steps li {
+  font-size: 22px;
+  line-height: 1.35;
+  margin-top: 15px;
+  color: #383838;
+  text-align: left;
+  display: block;
+}
+
+p,
+.steps {
+  width: 75%;
+  text-wrap: wrap;
+}
+
+.ingredients li,
+.steps li {
+  display: list-item;
+  margin-left: 15px;
+}
+
+.ingredients li {
+  list-style: square;
+}
+
+.steps {
+  margin-bottom: 15px;
+}
+
+.arrows {
+  font-size: 25px;
+  margin-right: 2px;
+}
+
+.home {
+  font-size: 33px;
 }
