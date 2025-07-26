@@ -1,39 +1,54 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
+  background-color: #fdf2b5;
 }
 
-.title {
-  font-family: "Brush Script MT";
+.logo {
+  font-family: "Papyrus";
   text-transform: lowercase;
   font-weight: 400;
-  font-size: 150px;
-  color: #fff;
-  background-color: #1b81e0;
+  font-size: 45px;
+  color: #af3d08;
   padding: 5px;
-  height: 20vh;
+  height: 10vh;
+  display: inline;
+}
+
+.featured {
+  font-size: 55px;
+  margin-top: 80px;
   text-align: center;
 }
 
 .recipes {
-  height: 80vh;
+  font-family: "Arial", sans-serif;
+  height: 90vh;
+  color: #1d1d1d;
 }
 
 .container {
-  width: 500px;
+  width: 550px;
+  margin-top: 125px;
   overflow: hidden;
-  padding: 30px;
-  margin-top: 145px;
-  margin-left: 175px;
+}
+
+.container-alfredo {
+  margin-left: 230px;
+}
+
+.container-burger,
+.container-spaghetti {
+  margin-left: 150px;
 }
 
 img {
   width: 100%;
-  margin-bottom: 10px;
 }
 
 li {
@@ -44,6 +59,6 @@ li {
 
 a {
   text-decoration: none;
-  font-family: "Tahoma", sans-serif;
-  color: #353535;
+  font-size: 35px;
+  color: #1d1d1d;
 }
